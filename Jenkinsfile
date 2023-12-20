@@ -18,7 +18,9 @@ pipeline {
             steps {
                 script {
                     // Change to the directory where your Terraform files are located
-                 pwd
+                    def currentDir = pwd()
+                    echo "Current working directory: ${currentDir}"
+                
                 }
             }
         }
