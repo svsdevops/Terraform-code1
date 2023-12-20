@@ -4,7 +4,7 @@ provider "aws" {
 
 variable "instance_name" {
    type = list(string)
-   default = ["prometheus-server", "prometheus-agent"}
+   default = ["prometheus-server", "prometheus-agent"]
 }
 
 
