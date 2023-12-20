@@ -9,6 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout your Terraform script repository
+                cleanWs()
                 git branch: 'feature/ec2instance', changelog: false, credentialsId: 'git-credentials', poll: false, url: 'https://github.com/svsdevops/Terraform-code1.git'
             }
         }
