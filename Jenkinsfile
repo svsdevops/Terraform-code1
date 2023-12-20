@@ -21,6 +21,7 @@ pipeline {
                     }
                 }
             }
+        }
 
 
         stage('Terraform Plan') {
@@ -37,5 +38,6 @@ pipeline {
         }
     }
 
+}
 }
 
