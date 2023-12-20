@@ -5,7 +5,7 @@ pipeline {
         AWS_DEFAULT_REGION = 'ap-south-1'
         AWS_ACCESS_KEY_ID     = sh(script: 'aws configure get aws_access_key_id', returnStdout: true).trim()
         AWS_SECRET_ACCESS_KEY = sh(script: 'aws configure get aws_secret_access_key', returnStdout: true).trim()
-        AWS_DEFAULT_REGION    = sh(script: 'aws configure get region', returnStdout: true).trim()
+        //AWS_DEFAULT_REGION    = sh(script: 'aws configure get region', returnStdout: true).trim()
     }
 
     stages {
